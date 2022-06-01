@@ -1,4 +1,7 @@
 body {
     margin: 0px;
+}
 
+header {
+    background: linear-gradient(45deg, #fff, #0f2495);
 }
