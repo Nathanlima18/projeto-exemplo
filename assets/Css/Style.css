@@ -2,6 +2,22 @@ body {
     margin: 0px;
 }
 
-header {
+.cabecalho {
     background: linear-gradient(45deg, #fff, #0f2495);
+    padding: 15px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color:#0f2495;
+    margin-right: 15px;
+    font-family: arial, helvetica, sans-serif;
+    border: 1px solid #0f2495;
+    padding: 5px;
 }
