@@ -1,0 +1,14 @@
+.Lista {
+    width: 100%; 
+    border-spacing: 0;
+}
+
+.Lista tr:nth-child(1) {
+    vertical-align: top;
+    background-color: #000;
+    color: white;
+}
+
+.Lista tr td {
+    Padding: 5px;
+}

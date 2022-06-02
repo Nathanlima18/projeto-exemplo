@@ -1,0 +1,21 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario div {
+    width: 100%;
+}
+
+.formulario .label-grande {
+    width: 50%;
+    text-align: right;
+    display: inline-block;
+}
+
+.formulario .Linha-formulario {
+    margin-bottom: 15px;   
+}
+

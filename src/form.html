@@ -4,7 +4,9 @@
         <Title> 
             Projeto-exemplo
         </Title>
+        <meta name="viewport" content="width=device=width , initial-scala=1.0" />
         <link rel="stylesheet" href="../assets/Css/Style.css"/>
+        <link rel="stylesheet" href="../assets/Css/form.css"/>
     </head>
 
     <body>
@@ -12,9 +14,41 @@
             <img src="../assets/img/logo.png">
         </header>
         <div class="menu">
-            <a href="../index.html">Listagem</a>
-            <a href="./form.html">Cadastrar</a>
+            <a href="../index.html">
+                Listagem
+            </a>
+            <a href="./form.html">
+                Cadastrar
+            </a>
         </div>
-        Meu formulário
+        <section>
+            <form class="formulario">
+                <div class="Linha-formulario">  
+                    <label class="label-grande" for="name">Nome</label>
+                    <input name="Nome" id="nome" required type="text" />
+                </div>
+                
+                <div class="Linha-formulario">
+                    <label class="label-grande" for="name">Telefone</label>
+                    <input name="Telefone" id="telefone" required type="phone" />
+                </div>
+
+                <div class="Linha-formulario" style="display:flex"> 
+                    <label class="label-grande">Experiência Prévia:</label>
+                    <div style="display:inline-block; width: 40%;">
+                        <input type="radio" name="Exp" id="exp-sim" /> <label for="exp-sim"> 
+                            Sim
+                        </label>
+                        <br>
+                        <input type="radio" name="Exp" id="exp-nao" /> <label for="exp-nao"> 
+                            Não
+                        </label>
+                    </div> 
+                </div>
+
+                <input type="submit" value="Salvar" />
+                
+            </form>
+        </section>    
     </body>
 </html>
