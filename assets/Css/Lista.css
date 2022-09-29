@@ -3,7 +3,7 @@
     border-spacing: 0;
 }
 
-.Lista tr:nth-child(1) {
+#linha1 {
     vertical-align: top;
     background-color: #000;
     color: white;

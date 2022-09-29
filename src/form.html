@@ -14,7 +14,7 @@
             <img src="../assets/img/logo.png">
         </header>
         <div class="menu">
-            <a href="../index.html">
+            <a id="goHome" href="../index.html">
                 Listagem
             </a>
             <a href="./form.html">
@@ -22,7 +22,7 @@
             </a>
         </div>
         <section>
-            <form class="formulario">
+            <form class="formulario" onsubmit="testaFormulario(event)">
                 <div class="Linha-formulario">  
                     <label class="label-grande" for="name">Nome</label>
                     <input name="Nome" id="nome" required type="text" />
@@ -30,17 +30,17 @@
                 
                 <div class="Linha-formulario">
                     <label class="label-grande" for="name">Telefone</label>
-                    <input name="Telefone" id="telefone" required type="text" />
+                    <input name="Telefone" id="telefone" onkeypress="testaCampoTelefone(event)" onfocus="this.value = ''" required type="text" />
                 </div>
 
                 <div class="Linha-formulario exp-line" style="display:flex"> 
                     <label class="label-grande">Experiência Prévia:</label>
                     <div>
-                        <input type="radio" name="Exp" id="exp-sim" /> <label for="exp-sim"> 
+                        <input type="radio" name="xp" id="xp-sim" value="true"/> <label for="xp-sim"> 
                             Sim
                         </label>
                         <br>
-                        <input type="radio" name="Exp" id="exp-nao" /> <label for="exp-nao"> 
+                        <input type="radio" name="xp" id="xp-nao" value="false" /> <label for="xp-nao"> 
                             Não
                         </label>
                     </div> 
@@ -50,5 +50,6 @@
                 
             </form>
         </section>    
+        <script src="C:\Users\liman\Desktop\Projeto Exemplo\assets\js\form.js"></script>
     </body>
 </html>
